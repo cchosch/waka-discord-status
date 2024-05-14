@@ -12,8 +12,9 @@ pub const PROD: bool = cfg!(not(debug_assertions));
 
 #[derive(Clone, Debug)]
 pub struct AppVars {
-    pub database_url: String,
+    // pub database_url: String,
     pub waka_key: String,
+    pub discord_key: String,
 }
 
 lazy_static! {
@@ -22,8 +23,9 @@ lazy_static! {
 
 fn new_vars() -> AppVars {
     AppVars {
-        database_url: env::var("DATABASE_URL").unwrap(),
+        // database_url: env::var("DATABASE_URL").unwrap(),
         waka_key: env::var("WAKA_KEY").unwrap(),
+        discord_key: env::var("DISCORD_KEY").unwrap(),
     }
 }
 #[derive(Clone)]
