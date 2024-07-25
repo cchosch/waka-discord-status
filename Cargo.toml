@@ -1,5 +1,5 @@
 [package]
-name = "discord-wakatime-update"
+name = "waka_discord_status"
 version = "0.1.0"
 edition = "2021"
 

@@ -3,4 +3,7 @@
 dev:
 	RUSTFLAGS=-Awarnings cargo watch -x "run -- -m dev" -i .\*\out\*
 
+prod:
+	cargo build --release
+
 

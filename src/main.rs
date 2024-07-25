@@ -1,7 +1,7 @@
 use chrono::{DateTime, Utc};
 use reqwest::header::{HeaderMap, HeaderValue, AUTHORIZATION};
 use serde::{Deserialize, Serialize};
-use std::future::IntoFuture;
+
 
 pub use util::PROD;
 pub use util::VARS;
