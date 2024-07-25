@@ -1,9 +1,6 @@
 use std::env;
 
 use lazy_static::lazy_static;
-use tower::layer::util::{Identity, Stack};
-use tower::ServiceBuilder;
-use tower_http::add_extension::AddExtensionLayer;
 
 pub const PROD: bool = cfg!(not(debug_assertions));
 
